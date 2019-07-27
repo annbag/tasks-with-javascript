@@ -33,7 +33,6 @@ console.log(result);
 // ---Task 3----------------------------------------------------------------
 // Remove all negative numbers from the array using filter function
 
-// Example invocation:
 var numbers = [-3, -2, -1, 0, 1, 2, 3];
 var result = task3(numbers);
 
@@ -41,4 +40,21 @@ function task3(numbers) {
   return numbers.filter(number => number >= 0);
 }
 
+console.log(result);
+
+// --- Task 4 ----------------------------------------------------------------
+// Find the largest number in the array using reduce function
+
+var numbers = [1, 2, 5, 3, 4, 6];
+var result = task4(numbers);
+
+function task4(numbers) {
+  return numbers.reduce((previousValue, currentValue) => {
+    if (previousValue > currentValue) {
+      return previousValue;
+    } else {
+      return currentValue;
+    }
+  });
+}
 console.log(result);
