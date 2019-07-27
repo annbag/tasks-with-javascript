@@ -58,3 +58,15 @@ function task4(numbers) {
   });
 }
 console.log(result);
+
+// --- Task 5 ----------------------------------------------------------------
+// Find only even numbers in the array
+
+var numbers = [2, 7, 18, 64, 32, 55, 10, 981, 96, 11, 490];
+var result = task5(numbers);
+
+function task5(numbers) {
+  return numbers.filter(number => number % 2 == 0);
+}
+
+console.log(result);
