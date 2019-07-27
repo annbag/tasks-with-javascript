@@ -29,3 +29,16 @@ function task2(sentence) {
     .join(' ');
 }
 console.log(result);
+
+// ---Task 3----------------------------------------------------------------
+// Remove all negative numbers from the array using filter function
+
+// Example invocation:
+var numbers = [-3, -2, -1, 0, 1, 2, 3];
+var result = task3(numbers);
+
+function task3(numbers) {
+  return numbers.filter(number => number >= 0);
+}
+
+console.log(result);
