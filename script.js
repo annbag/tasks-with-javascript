@@ -75,16 +75,37 @@ console.log(result);
 // Write sayHello function with one argument, which is object containing the person's data. If object has property name, your function should return in console "Hello, name". In other case, function return only "Hello"
 
 var person = {
-    name: "John",
-    age: 30,
-    hobby: "football"
-}
+  name: 'John',
+  age: 30,
+  hobby: 'football'
+};
 
 var result = sayHello(person);
-var result1 = sayHello(person.name = '');
+var result1 = sayHello((person.name = ''));
 
-function sayHello({name})  {
-    return name ? `Hello,  ${name}!` : 'Hello!';
+function sayHello({ name }) {
+  return name ? `Hello,  ${name}!` : 'Hello!';
 }
 console.log(result);
 console.log(result1);
+
+// --- Task 7 ----------------------------------------------------------------
+//  Find random person from the array
+
+var students = [
+  'Ann',
+  'John',
+  'Bill',
+  'Rob',
+  'Bella',
+  'Stella',
+  'Ted',
+  'Natalie'
+];
+var result = task7(students);
+
+function task7(list) {
+  return list[Math.floor(Math.random() * list.length)];
+}
+
+console.log(result);
