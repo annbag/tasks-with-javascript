@@ -1,4 +1,4 @@
-# tasks with javascript
+# TASKS WITH JAVASCRIPT
 
 Train solving tasks with javascript.
 
